@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" rowHeight="120" id="ooc-Bv-7pU" customClass="LeftChatCell" customModule="Messages" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="120"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ooc-Bv-7pU" id="H7l-Wa-df3">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="119.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeholderImg" translatesAutoresizingMaskIntoConstraints="NO" id="TiU-Aj-0eG">
+                        <rect key="frame" x="8" y="45" width="30" height="30"/>
+                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="30" id="2Mh-yx-kch"/>
+                            <constraint firstAttribute="width" constant="30" id="Tev-PQ-A15"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="15"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                    <view clipsSubviews="YES" contentMode="scaleToFill" horizontalHuggingPriority="751" verticalHuggingPriority="751" translatesAutoresizingMaskIntoConstraints="NO" id="JZy-Tg-96v">
+                        <rect key="frame" x="42" y="4" width="187.5" height="111.5"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="751" verticalHuggingPriority="751" text="Hi" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YKZ-3A-5F7">
+                                <rect key="frame" x="4" y="4" width="179.5" height="103.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.87250226740000003" green="0.54843014479999996" blue="0.66308212280000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="YKZ-3A-5F7" firstAttribute="top" secondItem="JZy-Tg-96v" secondAttribute="top" constant="4" id="54E-bd-0sq"/>
+                            <constraint firstItem="YKZ-3A-5F7" firstAttribute="leading" secondItem="JZy-Tg-96v" secondAttribute="leading" constant="4" id="8Cw-Uu-dUC"/>
+                            <constraint firstAttribute="bottom" secondItem="YKZ-3A-5F7" secondAttribute="bottom" constant="4" id="E40-2R-uVA"/>
+                            <constraint firstAttribute="trailing" secondItem="YKZ-3A-5F7" secondAttribute="trailing" constant="4" id="r3w-R5-hjY"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="8"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="JZy-Tg-96v" secondAttribute="bottom" constant="4" id="7WH-5f-a7e"/>
+                    <constraint firstItem="TiU-Aj-0eG" firstAttribute="leading" secondItem="H7l-Wa-df3" secondAttribute="leading" constant="8" id="CgE-2x-2ei"/>
+                    <constraint firstItem="JZy-Tg-96v" firstAttribute="leading" secondItem="TiU-Aj-0eG" secondAttribute="trailing" constant="4" id="MQF-w6-hTh"/>
+                    <constraint firstItem="JZy-Tg-96v" firstAttribute="width" secondItem="H7l-Wa-df3" secondAttribute="width" multiplier="0.5" id="WLu-sU-rPU"/>
+                    <constraint firstItem="TiU-Aj-0eG" firstAttribute="centerY" secondItem="H7l-Wa-df3" secondAttribute="centerY" id="jxm-kh-vvl"/>
+                    <constraint firstItem="JZy-Tg-96v" firstAttribute="top" secondItem="H7l-Wa-df3" secondAttribute="top" constant="4" id="luO-0A-PoX"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="chatLBL" destination="YKZ-3A-5F7" id="Kzh-Zr-2du"/>
+                <outlet property="userImage" destination="TiU-Aj-0eG" id="03T-ed-DUV"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="placeholderImg" width="225" height="225"/>
+    </resources>
+</document>

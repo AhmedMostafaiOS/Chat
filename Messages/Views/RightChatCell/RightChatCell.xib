@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" rowHeight="120" id="BxM-9r-dgf" customClass="RightChatCell" customModule="Messages" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="120"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="BxM-9r-dgf" id="9X7-W7-xPc">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="119.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeholderImg" translatesAutoresizingMaskIntoConstraints="NO" id="nJg-Iw-8LF">
+                        <rect key="frame" x="337" y="45" width="30" height="30"/>
+                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="30" id="35a-WI-lyy"/>
+                            <constraint firstAttribute="height" constant="30" id="dyI-uA-lKj"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="15"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oik-jK-29h">
+                        <rect key="frame" x="145.5" y="4" width="187.5" height="111.5"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="751" verticalHuggingPriority="751" text="Hi" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wqo-yu-sSE">
+                                <rect key="frame" x="4" y="4" width="179.5" height="103.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.43829905990000001" green="0.89593106509999998" blue="0.76452690359999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="Wqo-yu-sSE" secondAttribute="bottom" constant="4" id="1sa-KA-SJ3"/>
+                            <constraint firstItem="Wqo-yu-sSE" firstAttribute="leading" secondItem="oik-jK-29h" secondAttribute="leading" constant="4" id="9zF-Wb-lHf"/>
+                            <constraint firstItem="Wqo-yu-sSE" firstAttribute="top" secondItem="oik-jK-29h" secondAttribute="top" constant="4" id="Iqm-kp-Y73"/>
+                            <constraint firstAttribute="trailing" secondItem="Wqo-yu-sSE" secondAttribute="trailing" constant="4" id="sp0-gO-AjD"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="8"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="oik-jK-29h" secondAttribute="bottom" constant="4" id="EtZ-nj-nd0"/>
+                    <constraint firstItem="nJg-Iw-8LF" firstAttribute="centerY" secondItem="9X7-W7-xPc" secondAttribute="centerY" id="Fdg-Pe-otT"/>
+                    <constraint firstItem="oik-jK-29h" firstAttribute="top" secondItem="9X7-W7-xPc" secondAttribute="top" constant="4" id="Hht-at-6LO"/>
+                    <constraint firstAttribute="trailing" secondItem="nJg-Iw-8LF" secondAttribute="trailing" constant="8" id="JkG-6h-GbH"/>
+                    <constraint firstItem="oik-jK-29h" firstAttribute="width" secondItem="9X7-W7-xPc" secondAttribute="width" multiplier="0.5" id="WOm-8y-p5C"/>
+                    <constraint firstItem="nJg-Iw-8LF" firstAttribute="leading" secondItem="oik-jK-29h" secondAttribute="trailing" constant="4" id="kKm-5T-Bnw"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="chatLBL" destination="Wqo-yu-sSE" id="O2I-v4-M9X"/>
+                <outlet property="userImage" destination="nJg-Iw-8LF" id="7IE-p6-XVj"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="placeholderImg" width="225" height="225"/>
+    </resources>
+</document>
